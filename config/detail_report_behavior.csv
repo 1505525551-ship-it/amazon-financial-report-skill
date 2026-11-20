@@ -1,0 +1,60 @@
+﻿behavior,type_exact,description_keywords,rule_note
+Debt负余额结清（信用卡代扣）,"Debt,Deuda, マイナス残高",,仅type匹配
+订单反向收费（退款追回）,Order_Retrocharge,,仅type匹配
+反向收费退款,Refund_Retrocharge,,仅type匹配
+账户验证款,"Transfer,Trasferir,Transferir",Micro Deposit,银行账户验证的小额打款，不并入提现
+平台提现,"Transfer,Trasferir,Transferir,振込み",,仅type匹配
+批量清货回款,"Liquidations,清算",,仅type匹配
+商品销售,"Order,Pedido, 注文",,仅type匹配
+销售退款,"Refund,Chargeback Refund,Reembolso,返金",,仅type匹配
+批量清货费用调整,Liquidations Adjustments,,仅type匹配
+FBA费用-退货处理费,"FBA Transaction fees,FBA 在庫関連の手数料,FBA Customer Return Fee","FBA Customer Returns Fee,FBA在庫の返送手数料,FBA Customer Return",type+关键词匹配
+FBA费用-预留费用,FBA Transaction fees,Capacity reservation fee,type+关键词匹配
+FBA费用-入库缺陷费退回,FBA Transaction fees - Reversal,Inbound Defect Fee,type+关键词匹配
+FBA费用-入库缺陷费,FBA Transaction fees,Inbound Defect Fee,FBA Transaction fees 下的入库缺陷费，与退回行配对
+调整-仓内丢失赔偿,"Adjustment,調整","FBA Inventory Reimbursement - Lost:Warehouse,紛失",type+关键词匹配
+调整-仓内残损赔偿,Adjustment,FBA Inventory Reimbursement - Damaged:Warehouse,type+关键词匹配
+调整-买家重新扣款,Adjustment,Buyer Recharge,type+关键词匹配
+调整-一般调整,Adjustment,FBA Inventory Reimbursement - General Adjustment,type+关键词匹配
+调整-客服问题,Adjustment,FBA Inventory Reimbursement - Customer Service Issue,type+关键词匹配
+调整-客户退货,"Adjustment,Ajuste","FBA Inventory Reimbursement - Customer Return,Reembolso de inventario de Logística de Amazon (Devolución de cliente),Reembolso de Estoque FBA",多type多关键词
+费用调整-重量和尺寸变化,Fee Adjustment,Fee Adjustment - Weight and Dimension Change,type+关键词匹配
+调整-出库丢失补偿,"Adjustment,Ajuste",FBA Inventory Reimbursement - Lost:Outbound,"新增规则：reason code Lost_Outbound（已出库后丢失），须置于 Adjustment,Ajuste 兜底行之前"
+调整-入库丢失赔偿,"Adjustment,調整",Lost:Inbound,入库环节丢失赔偿，与仓内丢失分开
+调整-出库残损赔偿,"Adjustment,Ajuste",Damaged:Outbound,出库环节残损赔偿
+调整-其他调整项目,"Adjustment,Ajuste",,"多type纯匹配，必须放在Adjustment,Ajuste最后(兜底)"
+FBA费用-移除订单退货费,"FBA Inventory Fee,FBA Transaction fees",Removal Order: Return Fee,type+关键词匹配
+FBA费用-移除订单处理手续费,FBA手数料,返送/所有権の放棄依頼,返送或弃置的请求手续费，须排在弃置费之前
+FBA费用-移除订单弃置费,"FBA Inventory Fee,FBA Transaction fees,FBA手数料","removal order: disposal fee,Removal Order: Disposal Fee,Fulfilment by Amazon removal order: disposal fee,FBA Removal Order: Disposal Fee,所有権の放棄",type+双关键词
+FBA费用-月度仓储费,"FBA Inventory Fee,FBA 在庫関連の手数料,FBA Transaction fees,FBA手数料","FBA storage fee,FBA 在庫保管手数料,FBA在庫保管手数料",多type多语种关键词
+FBA费用-月度仓储费-更正调整,"FBA Transaction fees - Correction,FBA Inventory Fee - Correction","FBA Inventory Storage Fee,FBA storage fee",type+关键词匹配
+FBA费用-月度仓储费-退回,"FBA Transaction fees - Reversal,FBA Inventory Fee - Reversal","FBA Inventory Storage Fee,FBA storage fee",仓储费退回，金额为贷方；须排在月度仓储费之前，靠 type 区分
+FBA费用-月度仓储费,"FBA Transaction fees,Fulfilment by Amazon transaction fees","FBA Inventory Storage Fee,Inventory Storage Fee",新增规则：FBA Transaction fees 下的 FBA Inventory Storage Fee，与第 23 行同科目（会计上可合并）
+FBA费用-超龄库存附加费（长期仓储费）,"FBA Inventory Fee,FBA 在庫関連の手数料,FBA Transaction fees,FBA Transaction fees - Correction,FBA Transaction fees - Reversal","FBA Long-Term Storage Fee,FBA長期在庫保管手数料,FBA Long Term Storage Fee",多type多语种关键词
+FBA费用-评级与转售计划收费,Others,Grade and Resell Charge,type+关键词匹配
+FBA费用-评级与转售计划收费,FBA Transaction fees,Grade and Resell,同行为名的第二段，type 不同；评级转售费用（Fees 写法）
+平台服务费-MCF优选定价卖家抵扣金,Amazon Charges,MCF Preferred Pricing Seller Credit,type+关键词匹配
+FBA费用-其他库存费用,FBA Inventory Fee,,仅type匹配，必须放在FBA Inventory Fee最后(兜底)
+AWD费用-仓储费,FBA Transaction fees,AWD Storage Fee,新增规则：AWD 入仓分销网络仓储费，与 FBA 月度仓储费相互独立
+AWD费用-处理费,FBA Transaction fees,AWD Processing Fee,AWD 入库处理费，与 AWD 仓储费分开统计
+AWD费用-运输费,FBA Transaction fees,AWD Transportation Fee,AWD 运输费
+FBA费用-入库配置服务费,"Service Fee,FBA Transaction fees",FBA Inbound Placement Service Fee,type+关键词匹配
+FBA费用-配送费,"FBA Transaction fees,FBA 在庫関連の手数料","FBA Fulfillment Fee,FBA配送料",FBA 发货的配送费；其他语种写法按实际样本再补
+FBA费用-合作承运商入仓运费,FBA Transaction fees,Amazon-Partnered Carrier,亚马逊合作承运商入仓运费
+平台服务费-入库缺陷费-运送到错误位置的货物,"Service Fee - Reversal,Service Fee",Inbound Defect Fee - Shipments delivered to the wrong location,多type+关键词
+平台服务费-Vine注册费,Amazon Fees,Vine Enrollment Fee,type+关键词匹配
+平台服务费-高级服务费（付费服务费用）,Amazon Fees,Premium Services Fee,type+关键词匹配
+平台服务费-广告费,"Service Fee, 注文外料金,Tarifa de servicio","Cost of advertising,Cost of Advertising, 広告費用,Costo de la publicidad",多type多语种关键词
+平台服务费-广告费退款,Service Fee,"Refund for Advertiser,Refund for advertiser",type+关键词匹配
+平台服务费-订阅费（月服务费）,"Service Fee,Tarifa de servicio, 注文外料金","Subscription,Suscripción, 月額登録料",多type多语种关键词
+其他推广费-促销参与费,Amazon Fees,Deal Participation Fee,type+关键词匹配
+其他推广费-促销绩效费,Amazon Fees,Deal Performance Based Fee,type+关键词匹配
+其他推广费-优惠券参与费,Amazon Fees,Coupon Participation Fee,type+关键词匹配
+其他推广费-优惠券绩效费（变动费用）,"Amazon Fees,Amazon Fees - Reversal,Amazon Fees - Correction","Coupon Performance Based Fee,Coupon performance-based fee",多type+关键词
+平台服务费-计划外服务费,Service Fee,Unplanned Service Charge - Deleted/Abandoned,新增规则：Unplanned Service Charge - Deleted/Abandoned，须置于 Service Fee 兜底行之前
+FBA费用-国际运费及清关费,Service Fee,FBA international shipping,国际运费与清关费，挂在 Service Fee 下
+平台服务费-其他（Service Fee 类）,Service Fee,,仅type匹配，必须放在FBA Inventory Fee最后(兜底)
+平台服务费-其他（Amazon Fees 类）,Amazon Fees,,仅type匹配，必须放在Amazon Fees最后(兜底)
+退货运费结算,Shipping Services,ReturnPostageBilling,
+运费调整,Shipping Services,Adjustment,
+FBA费用-其他（FBA Transaction fees 类）,FBA Transaction fees,,FBA Transaction fees 兜底，必须永远放在该 type 所有细分规则之后

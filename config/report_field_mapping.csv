@@ -1,0 +1,41 @@
+﻿summary字段,分类,币种,取数列,行为,type条件,描述关键词,条件,核对组,说明
+FBA商品销售收入,收入,,product_sales,商品销售,order|pedido|注文,,any,商品销售收入,
+FBA商品销售退款,收入,,product_sales|other,销售退款,refund|reembolso|返金,,any,商品销售退款,
+运费收入,收入,,shipping_credits,商品销售,,,any,,
+运费退款,收入,,shipping_credits,销售退款,,,any,,
+礼品包装收入,收入,,gift_wrap_credits,商品销售,,,any,,
+礼品包装退款,收入,,gift_wrap_credits,销售退款,,,any,,
+销售折扣,收入,,promotional_rebates,商品销售,,,any,,
+销售折扣转回,收入,,promotional_rebates,销售退款,,,any,,
+FBA库存赔偿收入,收入,,total,调整-*,,,pos,,
+FBA批量清货回款,收入,,product_sales,批量清货回款,,,any,,
+FBA批量清货回款调整,收入,,product_sales|other,批量清货费用调整,,,any,,
+FBA成交费,费用,,selling_fees,商品销售,order|pedido|注文,,any,成交费,
+成交费退款,费用,,selling_fees,销售退款,refund|reembolso|返金,,any,成交费退款+退款管理费,明细中佣金返还与退货管理费轧差，两行合并核对
+退款管理费,费用,,selling_fees,销售退款,,,any,成交费退款+退款管理费,
+FBA配送费,费用,,fba_fees|other,商品销售|FBA费用-入库配置服务费|FBA费用-合作承运商入仓运费,,,any,,
+FBA配送费退款,费用,,fba_fees,销售退款|费用调整-重量和尺寸变化,,,any,,仅取 fba_fees 列；other 列为重量尺寸调整等非退款项，计入会多算
+FBA仓储及入库服务费,费用,,fba_fees|other,FBA费用-月度仓储费|FBA费用-月度仓储费-*|FBA费用-超龄库存附加费*|FBA费用-移除订单*|FBA费用-其他库存费用|FBA费用-退货处理费|FBA费用-入库缺陷费*|FBA费用-其他（FBA Transaction fees 类）|AWD费用-*|平台服务费-入库缺陷费-运送到错误位置的货物|平台服务费-计划外服务费,,,any,,
+平台服务费,费用,,selling_fees|other,其他推广费-*|平台服务费-*|FBA费用-国际运费及清关费,,,any,,
+平台服务费-订阅费,费用,JPY,other,平台服务费-订阅费（月服务费）,,,any,,日本站单独列示
+广告费,费用,,other_transaction_fees,平台服务费-广告费,service fee|tarifa de servicio|注文外料金,cost of advertising|costo de la publicidad|広告費用,any,,
+广告费退款,费用,,other_transaction_fees,平台服务费-广告费退款,,,any,,
+费用调整,费用,,other,调整-*,,,neg,,
+批量清货费用,费用,,other_transaction_fees,批量清货回款|批量清货费用调整,,,any,,
+代收商品/运费/包装税费及监管费,税,,product_sales_tax|shipping_credits_tax|gift_wrap_credits_tax|sales_tax_collected|promotional_rebates_tax,*,,,pos,,
+退还商品/运费/包装税费及监管费,税,,product_sales_tax|shipping_credits_tax|gift_wrap_credits_tax|sales_tax_collected|promotional_rebates_tax,*,,,neg,,
+代收商品/运费/包装税费,税,,product_sales_tax|shipping_credits_tax|gift_wrap_credits_tax|sales_tax_collected|promotional_rebates_tax,*,,,pos,,
+退还商品/运费/包装税费,税,,product_sales_tax|shipping_credits_tax|gift_wrap_credits_tax|sales_tax_collected|promotional_rebates_tax,*,,,neg,,
+平台代扣代缴税费及监管费,税,,marketplace_withheld_tax,*,,,any,,
+平台代扣代缴税费,税,,marketplace_withheld_tax,*,,,any,,
+转账至银行账户,转账,,other,平台提现|账户验证款,transfer|trasferir|transferir|振込み,,any,,
+信用卡扣款及其他债务回收,转账,,other,Debt负余额结清（信用卡代扣）,debt|deuda|マイナス残高,,any,,
+商品销售收入（自发货）,收入,,product_sales,商品销售,,,any,商品销售收入,fba_fees 为 0 视为自发货订单
+商品销售退款（自发货）,收入,,product_sales|other,销售退款,,,any,商品销售退款,
+自发货成交费,费用,,selling_fees,商品销售,,,any,成交费,
+积分费用-发放,收入,,points_fees,*,,,neg,,日本站积分发放成本
+积分费用-退回,收入,,points_fees,*,,,pos,,日本站积分退回
+其他交易费用,费用,,other,FBA费用-评级与转售计划收费,,,any,,评级与转售计划收费（Grade and Resell）
+购买物流面单,费用,,other,退货运费结算,,,any,,退货运费结算（ReturnPostageBilling）
+承运商面单调整,费用,,other,运费调整,,,any,,运费调整（Adjustment，Shipping Services）
+FBA配送费,费用,,fba_fees,FBA费用-评级与转售计划收费,,,any,,评级与转售计划收费中的 FBA 交易费部分，与主规则按行为分流

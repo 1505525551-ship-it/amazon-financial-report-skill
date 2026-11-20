@@ -1,0 +1,39 @@
+﻿标准字段,中文名,USD,CAD,MXN,JPY,BRL
+website,站点,,,,,
+currency,货币,,,,,
+behavior,平台行为,,,,,
+date_time,日期/时间,date/time,date/time,fecha/hora,日付/時間,data/hora
+settlement_id,结算编号ID,settlement id,settlement id,Id. de liquidación,決済番号,id de liquidação
+type,TYPE类型,type,type,tipo,トランザクションの種類,tipo
+order_id,订单号,order id,order id,Id. del pedido,注文番号,id do pedido
+sku,sku,sku,sku,sku,SKU,sku
+description,描述,description,description,descripción,説明,descrição
+quantity,数量,quantity,quantity,cantidad,数量,quantidade
+marketplace,站点,marketplace,marketplace,marketplace,Amazon 出品サービス,mercado
+account_type,账户类型,account type,,,,tipo de conta
+fulfillment,发货方式,fulfillment,fulfillment,cumplimiento,フルフィルメント,atendimento
+order_city,订货城市,order city,order city,ciudad del pedido,市町村,cidade do pedido
+order_state,订单城市区,order state,order state,estado del pedido,都道府県,estado do pedido
+order_postal,邮政编码,order postal,order postal,código postal del pedido,郵便番号,postal do pedido
+tax_collection_model,税收征管模式,tax collection model,tax collection model,modelo de recaudación de impuestos,税金徴収型,
+product_sales,产品销售收入,product sales,product sales,ventas de productos,商品売上,vendas do produto
+product_sales_tax,销售税费,product sales tax,product sales tax,impuesto de ventas de productos,商品の売上税,
+shipping_credits,运费收入,shipping credits,shipping credits,créditos de envío,配送料,créditos de remessa
+shipping_credits_tax,运费税费,shipping credits tax,shipping credits tax,impuesto de abono de envío,配送料の税金,
+gift_wrap_credits,礼品包装收入,gift wrap credits,gift wrap credits,créditos por envoltorio de regalo,ギフト包装手数料,créditos de embalagem de presente
+gift_wrap_credits_tax,礼品包装税费,giftwrap credits tax,gift wrap credits tax,impuesto de créditos de envoltura,ギフト包装クレジットの税金,
+regulatory_fee,Regulatory Fee,Regulatory Fee,Regulatory fee,Tarifa reglamentaria,,
+tax_on_regulatory_fee,Tax On Regulatory Fee,Tax On Regulatory Fee,Tax on regulatory fee,Impuesto sobre tarifa reglamentaria,,
+promotional_rebates,销售折扣,promotional rebates,promotional rebates,descuentos promocionales,プロモーション割引額,descontos promocionais
+promotional_rebates_tax,销售折扣税,promotional rebates tax,promotional rebates tax,impuesto de reembolsos promocionales,プロモーション割引の税金,
+sales_tax_collected,平台代收销售税,,,,,imposto de vendas coletados
+low_value_goods,低值易耗品,,,,,
+marketplace_withheld_tax,平台代缴税,marketplace withheld tax,marketplace withheld tax,impuesto de retenciones en la plataforma,源泉徴収税を伴うマーケットプレイス,
+selling_fees,成交费/佣金,selling fees,selling fees,tarifas de venta,手数料,tarifas de venda
+fba_fees,FBA尾程派送费,fba fees,fba fees,tarifas fba,FBA 手数料,taxas fba
+points_fees,积分费,,,,Amazonポイントの費用,
+other_transaction_fees,其他费用,other transaction fees,other transaction fees,tarifas de otra transacción,トランザクションに関するその他の手数料,taxas de outras transações
+other,其他,other,other,otro,その他,outro
+total,合计,total,total,total,合計,total
+transaction_status,交易结算状态,Transaction Status,Transaction status,Estado de la transacción,トランザクションのステータス,Status da transação
+transaction_release_date,交易结算日期,Transaction Release Date,Transaction Release Date,Fecha de liberación de la transacción,トランザクション開始日,Data de liberação da transação
